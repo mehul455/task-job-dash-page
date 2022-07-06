@@ -1,4 +1,5 @@
 import React from 'react'
+import ProgressBar from "@ramonak/react-progress-bar";
 
 const Bio = () => {
   return (
@@ -17,9 +18,14 @@ const Bio = () => {
                                 <p className="pt-2 font-bold"><small className="pr-2 font-normal">Industry: </small>Information Technology</p>
                                 <p className="pt-2 font-bold"><small className="pr-2 font-normal">City: </small>Mumbai ( Maharashtra )</p>
                                 <p className="pt-2 font-bold"><small className="pr-2 font-normal">Experience: </small>5 Yrs</p>
-        
+                                 <div className='pt-4'>
+                                 <p className="pb-2 font-bold text-sm">Profile Completion Status <span className='pl-3'>  75%</span></p>
+                                 <ProgressBar completed={75}  bgColor="#8FA01F "	/>  
+                                 </div>
+                                
                             </div>
-                            <div className="flex  justify-between p-2 pt-4">
+
+                            <div className="flex  justify-between p-2 pt-7">
                                 <div className="text-center border  border-gray  rounded-md p-2">
                                     <h5 className="text-blue-800">500</h5>
                                     <small>connection</small>
